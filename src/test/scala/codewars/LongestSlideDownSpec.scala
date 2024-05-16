@@ -1,6 +1,6 @@
 package codewars
 
-import codewars.PiramideSlideDownTask.longestSlideDown
+import codewars.PiramidSlideDownTask.longestSlideDown
 import org.scalatest.flatspec.AnyFlatSpec
 
 class LongestSlideDownSpec extends AnyFlatSpec {

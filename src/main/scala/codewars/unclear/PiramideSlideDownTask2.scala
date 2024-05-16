@@ -1,4 +1,4 @@
-package codewars
+package codewars.unclear
 
 import scala.annotation.tailrec
 

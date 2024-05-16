@@ -32,16 +32,4 @@ object HumanTimeTask {
       case quantity => quantity + " " + title + "s"
     }, seconds % unit)
 
-  def main(args: Array[String]): Unit = {
-
-    println(takeUnit(125, Minutes, "minute"))
-    println(takeUnit(63, Minutes, "minute"))
-
-    println(formatDuration(1234567))
-    println(formatDuration(0))
-
-
-    println("a, b, c".patch("a, b, c".lastIndexOf(","), " and", 1))
-  }
-
 }

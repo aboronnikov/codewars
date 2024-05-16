@@ -1,6 +1,6 @@
 package codewars
 
-import codewars.SnailTaskClear1.snail
+import codewars.SnailTask.snail
 import org.scalatest.flatspec.AnyFlatSpec
 
 class SnailTest extends AnyFlatSpec {

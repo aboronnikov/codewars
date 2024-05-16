@@ -1,6 +1,6 @@
 package codewars
 
-import codewars.NextBiggerNumber2.nextBiggerNumber
+import codewars.NextBiggerNumber.nextBiggerNumber
 import org.scalatest.flatspec.AnyFlatSpec
 
 class NextBiggerNumberSpec extends AnyFlatSpec {

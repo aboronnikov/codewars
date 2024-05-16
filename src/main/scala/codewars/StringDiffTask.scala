@@ -16,13 +16,4 @@ object StringDiffTask {
         case (Some(v1), None) => res :+ (k, s"1:$v1")
       }).sortBy(_._2).sortBy(-_._2.length).map(_._2).mkString("/")
   }
-
-
-  def main(args: Array[String]): Unit = {
-
-    val m1 = Map("a" -> 1)
-
-    println(mix("Are they here", "yes, they are here"))
-
-  }
 }

@@ -29,50 +29,17 @@ object Morse2Task {
 
   def decodeMorse(msg: String): String =
     msg.split("\\s{3}").filter(_.nonEmpty).map(_.split("\\s{1}")
-      .filter(_.nonEmpty).map(morseCodes1(_))
+      .filter(_.nonEmpty).map(morseCodes(_))
       .flatten.mkString + " ").mkString.trim
 
-  def morseCodes1(str: String): String = {
-    try {
-      morseCodes(str)
-    }
-    catch {
-      case x: NoSuchElementException => {
-        println(s"$str is not morse code");
-        ""
-      }
-    }
-  }
 
+  /**
+   * Translates dot-dashed coded letter to human letter
+   * This method imported in task case on codewars
+   *
+   * @param str
+   * @return
+   */
+  def morseCodes(str: String): String = ???
 
-  def morseCodes(str: String): String = {
-    println(s"morseCodes for '$str' requested")
-
-    "-"
-  }
-
-
-  def main(args: Array[String]): Unit = {
-    //val s1 = "0000001010101010101111101010000"
-
-    // val s2 = "000000110011"
-
-    //println("decode result: " + decodeBits(s2))
-
-    val decoded1 = decodeBits("10001")
-    println(s"dot dashed: $decoded1")
-    println("words: " + decoded1.split("\\s{7}").mkString(" / "))
-
-    println("decode result: " + decodeMorse(decoded1))
-
-    val z = ".... . -.--   .--- ..- -.. ."
-    println(z.split("\\s{7}").mkString("|"))
-    val z1 = z.split("\\s{7}").filter(_.nonEmpty).map(_.split("\\s{3}"))
-    println(z1.flatten.mkString("|"))
-
-
-    val s1 = ". . .   - ."
-    println(s1.replace(" ", ""))
-
-  }
 }
